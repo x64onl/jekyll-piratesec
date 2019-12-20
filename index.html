@@ -12,5 +12,5 @@ layout: homepage
     {% for post in site.posts limit: 5 %}
     {% include archive-item.html %}
     {% endfor %}
-    <p class="sub-section"><a href="/archive">Read More Articles &rarr;</a></p>
+    <p class="sub-section"><a href="{{ '/archive' | absolute_url }}">Read More Articles &rarr;</a></p>
 </section>
