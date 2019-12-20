@@ -1,6 +1,15 @@
 ---
 ---
 
+/* Webfonts - https://int10h.org/oldschool-pc-fonts/ */
+
+@font-face {
+    font-family: 'IBM_MDA';
+    src: url({{ '/assets/fonts/ibm_mda.ttf' | absolute_url }}) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
 @media screen {
     @import "main";
 }
