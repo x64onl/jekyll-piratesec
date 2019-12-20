@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <title>{% if page.layout == "homepage" %}{{ site.title }}{% else %}{{ page.title }} - {{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.layout == "homepage" %}{{ site.description }}{% else %}{{ page.excerpt | strip_html | strip_newlines }}{% endif %}">
-    <link rel="shortcut icon" href="{{ "/favicon.ico" | relative_url }}"/>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-    <link href="{{ "/feed.xml" | relative_url }}" type="application/rss+xml" rel="alternate" title="Latest 10 blog posts (atom)" />
+    <link rel="shortcut icon" href="{{ "favicon.ico" | relative_url }}">
+    <link rel="stylesheet" href="{{ "assets/css/main.css" | relative_url }}">
+    <link href="{{ "feed.xml" | relative_url }}" type="application/rss+xml" rel="alternate" title="Latest 10 blog posts (atom)">
   </head>
   <body>
     <header>
