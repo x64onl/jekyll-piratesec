@@ -1,0 +1,7 @@
+<nav>
+    <a href="https://strange.onl/" target="_blank">STRΛNGE</a>
+    {% for entry in site.data.social %}
+    | <a href="{{ entry.url }}" target="_blank">{{ entry.title }}</a>
+    {% endfor %}
+</nav>
+<p>Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and the <a href="https://github.com/dpstrange/jekyll-piratesec" target="_blank">PirateSec</a> theme.</p>

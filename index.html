@@ -1,0 +1,16 @@
+---
+layout: homepage
+---
+
+<section>
+    <h1>Welcome!</h1>
+    <p><a href="https://github.com/dpstrange/jekyll-piratesec" target="_blank">Jekyll PirateSec</a> is a Seakpunk flavored <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> theme inspired by retro terminals.</p>
+</section>
+
+<section>
+    <h1>Latest Articles</h1>
+    {% for post in site.posts limit: 5 %}
+    {% include archive-item.html %}
+    {% endfor %}
+    <p class="sub-section"><a href="/archive">Read More Articles &rarr;</a></p>
+</section>

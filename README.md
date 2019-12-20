@@ -1,2 +1,2 @@
 # jekyll-piratesec
-A  Seakpunk flavored terminal style Jekyll theme.
+A Seakpunk flavored Jekyll theme inspired by retro terminals.

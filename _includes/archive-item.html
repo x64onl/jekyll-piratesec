@@ -1,0 +1,14 @@
+<article>
+    <h2><a href="{{ post.url }}">{{ post.date | date: "%b %d, %Y" }} - {{ post.title }}</a></h2>
+    {% if post.featured %}
+    <div class="featured-image sub-section" style="background-image: url({{ post.featured }});"></div>
+    {% endif %}
+    {% if post.content contains '<!--more-->' %}
+       <p>{{ post.content | split:'<!--more-->' | first }}</p>
+    {% else %}
+       <p>{{ post.excerpt | strip_newline | strip_html }}</p>
+    {% endif %}
+    {% if post.content contains '<!--more-->' or post.excerpt != post.content %}
+    <a href="{{ post.url }}">Continue Reading</a>
+    {% endif %}
+</article>

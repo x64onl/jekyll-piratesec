@@ -1,0 +1,6 @@
+url: "https://dpstrange.github.io/jekyll-piratesec/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "PirateSec" # the name of your site, e.g. ACME Corp.
+subtitle: "A Seapunk Falvored Retro Terminal Jekyll Theme"
+description: "A Seapunk falvored Jekyll theme inspired by retro terminals."
+permalink: /:title/
