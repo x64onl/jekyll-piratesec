@@ -1,4 +1,4 @@
-<a href="{{ site.url }}"><div class="ascii-logo"><pre>
+<a href="{{ site.url | absolute_url }}"><div class="ascii-logo"><pre>
 @@@@@@@   @@@  @@@@@@@    @@@@@@   @@@@@@@  @@@@@@@@   @@@@@@   @@@@@@@@   @@@@@@@
 @@@@@@@@  @@@  @@@@@@@@  @@@@@@@@  @@@@@@@  @@@@@@@@  @@@@@@@   @@@@@@@@  @@@@@@@@
 @@!  @@@  @@!  @@!  @@@  @@!  @@@    @@!    @@!       !@@       @@!       !@@     
@@ -11,11 +11,11 @@
  :        :     :   : :   :   : :     :     : :: ::   :: : :    : :: ::    :: :: :
 
 </pre></div></a>
-<h1 class="text-logo"><a href="{{ site.url }}">PirateSec</a></h1>
+<h1 class="text-logo"><a href="{{ site.url | absolute_url }}">PirateSec</a></h1>
 <h2>{{ site.subtitle }}</h2>
 <nav>
-    <a href="/">Home</a>
+    <a href="{{ site.url | absolute_url }}">Home</a>
     {% for entry in site.data.navigation %}
-    | <a href="{{ entry.url }}">{{ entry.title }}</a>
+    | <a href="{{ entry.url | absolute_url }}">{{ entry.title }}</a>
     {% endfor %}
 </nav>
