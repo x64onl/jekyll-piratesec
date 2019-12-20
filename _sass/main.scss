@@ -168,10 +168,6 @@ main h3, main h4, main h5, main h6 {
   font-size: 1.2rem;
 }
 
-main p {
-  text-align: justify;
-}
-
 main blockquote {
   margin: 0;
   padding: 1rem;
@@ -217,6 +213,10 @@ img {
   image-rendering: pixelated;
 }
 
+pre {
+  overflow: scroll;
+}
+
 code, pre {
   font-family: 'IBM_MDA', monospace;
 }
@@ -233,8 +233,6 @@ code, pre {
 }
 
 .text-logo {
-  font-size: 3.5em;
-  text-decoration: underline var(--link-color);
   display: none;
 }
 
@@ -245,6 +243,12 @@ code, pre {
 
   .text-logo {
       display: block;
+      font-size: 2em;
+      text-decoration: underline var(--link-color);
+  }
+
+  header h2 {
+    font-size: 1.25rem;
   }
 }
 
