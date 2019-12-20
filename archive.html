@@ -10,7 +10,7 @@ title: "Archive"
 <h2 id="{{ this_year }}-ref">{{this_year}}</h2>
 <nav>
 {% endif %}
-    <h3 class="no-margin"><a href="{{ post.url }}">{{ post.date | date: "%b %d, %Y" }} - {{ post.title }}</a></h3>
+    <h3 class="no-margin"><a href="{{ post.url | absolute_url }}">{{ post.date | date: "%b %d, %Y" }} - {{ post.title }}</a></h3>
 {% if forloop.last %}
 </nav>
 {% else %}
