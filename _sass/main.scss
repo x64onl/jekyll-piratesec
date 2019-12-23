@@ -320,11 +320,11 @@ info::before {
   background-color: var(--foreground-color);
 }
 
-code .highlighter-rouge {
+code.highlighter-rouge {
   padding: 0.3rem 0.5rem 0.3rem 0.5rem;
 }
 
-pre .highlight { 
+pre.highlight { 
   margin: 0;
   padding: 1rem;
   line-height: 1.5rem;
