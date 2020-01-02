@@ -1,7 +1,9 @@
 <article>
     <h2><a href="{{ post.url | absolute_url }}">{{ post.date | date: "%b %d, %Y" }} - {{ post.title }}</a></h2>
     {% if post.featured %}
-    <div class="featured-image sub-section" style="background-image: url({{ post.featured | absolute_url }});"></div>
+    <div class="featured-image">
+      <a href="{{ post.url | absolute_url }}"><img class="pixelate" src="{{ post.featured | absolute_url }}"></a>
+    </div>
     {% endif %}
     {% if post.content contains '<!--more-->' %}
        <p>{{ post.content | split:'<!--more-->' | first }}</p>

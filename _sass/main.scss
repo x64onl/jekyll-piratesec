@@ -213,9 +213,6 @@ code, pre {
 
 img {
   max-width: 100%;
-  image-rendering: auto;
-  image-rendering: crisp-edges;
-  image-rendering: pixelated;
 }
 
 /* Classes */
@@ -253,10 +250,22 @@ img {
 // Post Elements
 
 .featured-image {
-  height: 150px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 200px;
+  overflow: hidden;
+}
+
+canvas.pixelate {
+  position: absolute;
+  z-index: 1;
+  transition: opacity 0.15s linear;
+}
+
+canvas.pixelate:hover {
+  opacity: 0;
+  transition: opacity .15s linear;
 }
 
 .sub-section {
