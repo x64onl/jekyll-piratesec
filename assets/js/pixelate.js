@@ -37,11 +37,13 @@
         // element.style.display = 'none';
     };
 
-    var img = document.querySelectorAll('.pixelate');
+    document.addEventListener('DOMContentLoaded', function () {
+        var img = document.querySelectorAll('.pixelate');
 
-    for (var i = 0; i < img.length; i++) {
-        img[i].addEventListener('load', function () {
-            pixelate.apply(this);
-        });
-    }
+        for (var i = 0; i < img.length; i++) {
+            img[i].addEventListener('load', function() {
+                pixelate.apply(this);
+            });
+        }
+    });
 })();
