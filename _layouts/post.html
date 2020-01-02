@@ -6,7 +6,7 @@ layout: default
     <h1>{{ page.title }}</h1>
     {% if page.featured %}
     <div class="featured-image">
-      <a href="{{ page.url | absolute_url }}"><img class="pixelate" src="{{ page.featured | absolute_url }}"></a>
+      <img class="pixelate" src="{{ page.featured | absolute_url }}">
     </div>
     {% endif %}
     <div class="sub-section">

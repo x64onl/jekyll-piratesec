@@ -7,41 +7,41 @@
  */
 
 (function() {
-  var pixelate = function() {
-      var options = {
-          pixelation: 0.08,
-      };
+    var pixelate = function() {
+        var options = {
+            pixelation: 0.08,
+        };
 
-      var element = this;
-      var elementParent = element.parentNode;
+        var element = this;
+        var elementParent = element.parentNode;
 
-      var imgWidth = element.width;
-      var imgHeight = element.height;
+        var imgWidth = element.width;
+        var imgHeight = element.height;
 
-      var canv = document.createElement('canvas');
-      canv.classList.add("pixelate");
-      canv.width = imgWidth;
-      canv.height = imgHeight;
+        var canv = document.createElement('canvas');
+        canv.classList.add("pixelate");
+        canv.width = imgWidth;
+        canv.height = imgHeight;
 
-      var ctx = canv.getContext('2d');
-      ctx.imageSmoothingEnabled = false;
+        var ctx = canv.getContext('2d');
+        ctx.imageSmoothingEnabled = false;
 
-      var width = imgWidth * options.pixelation;
-      var height = imgHeight * options.pixelation;
+        var width = imgWidth * options.pixelation;
+        var height = imgHeight * options.pixelation;
 
-      ctx.drawImage(element, 0, 0, width, height);
-      ctx.drawImage(canv, 0, 0, width, height, 0, 0, canv.width, canv.height);
+        ctx.drawImage(element, 0, 0, width, height);
+        ctx.drawImage(canv, 0, 0, width, height, 0, 0, canv.width, canv.height);
 
-      elementParent.insertBefore(canv, element);
+        elementParent.insertBefore(canv, element);
 
-      // element.style.display = 'none';
-  };
+        // element.style.display = 'none';
+    };
 
-  var img = document.querySelectorAll('.pixelate');
+    var img = document.querySelectorAll('.pixelate');
 
-  for (var i = 0; i < img.length; i++) {
-      img[i].addEventListener('load', function () {
-          pixelate.apply(this);
-      });
-  }
+    for (var i = 0; i < img.length; i++) {
+        img[i].addEventListener('load', function () {
+            pixelate.apply(this);
+        });
+    }
 })();
