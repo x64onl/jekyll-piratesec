@@ -6,7 +6,7 @@
  * License: MIT
  */
 
-(function() {
+(function (window, $) {
     var pixelate = function() {
         var options = {
             pixelation: 0.08,
@@ -19,11 +19,11 @@
         var imgHeight = element.height;
 
         var canv = document.createElement('canvas');
-        canv.classList.add("pixelate");
         canv.width = imgWidth;
         canv.height = imgHeight;
+        canv.classList.add("pixelate");
 
-        var ctx = canv.getContext('2d');
+        var ctx = canv.getContext('2d', { alpha: false });
         ctx.imageSmoothingEnabled = false;
 
         var width = imgWidth * options.pixelation;
@@ -45,5 +45,5 @@
                 pixelate.apply(this);
             });
         }
-    });
-})();
+    });    
+})(window, typeof jQuery === 'undefined' ? null : jQuery);
