@@ -212,7 +212,11 @@ code, pre {
 }
 
 img, canvas {
-  max-width: 100%;
+  width: 100%;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  filter: contrast(125%);
 }
 
 /* Classes */
@@ -248,6 +252,11 @@ img, canvas {
 }
 
 // Post Elements
+
+.featured-image {
+  height: 150px;
+  overflow: hidden;
+}
 
 .sub-section {
   @include md-margin;

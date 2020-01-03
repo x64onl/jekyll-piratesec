@@ -19,15 +19,12 @@
     <footer>
       {% include footer.html %}
     </footer>
-    <script
-			  src="https://code.jquery.com/jquery-3.4.1.min.js"
-			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-			  crossorigin="anonymous"></script>
-    <script type="text/javascript" src="{{ '/assets/js/main.js' | absolute_url }}"></script>
-    <script type="text/javascript" src="{{ '/assets/js/pixelate.js' | absolute_url }}"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="{{ '/assets/js/main.js' | absolute_url }}"></script>
+    <script src="{{ '/assets/js/pixelate.js' | absolute_url }}"></script>
     <script>
       $(document).ready(function() {
-	      $('.pixelate').pixelate();
+        $('.pixelate').pixelate();
       });
     </script>
   </body>

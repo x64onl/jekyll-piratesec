@@ -15,6 +15,5 @@ console.log('%c%s', 'color: #a6e22e; background: #11768d',
 //   :        :     :   : :   :   : :     :     : :: ::   :: : :    : :: ::    :: :: :  //
 //                                                                                      //
 //  - Piratesec Theme for Jekyll - https://github.com/dpstrange/jekyll-piratesec        //
-//  - pixelate.js - https://github.com/dpstrange/pixelate.js                            //
 //                                                                                      //
 //////////////////////////////////////////////////////////////////////////////////////////`);
