@@ -1,7 +1,7 @@
 <article>
     <h2><a href="{{ post.url | absolute_url }}">{{ post.date | date: "%b %d, %Y" }} - {{ post.title }}</a></h2>
     {% if post.featured %}
-    <div class="featured-image">
+    <div class="featured-image"{% if site.featuredHeight %} style="height: {{ site.featuredHeight }}px"{% endif %}>
       <a href="{{ post.url | absolute_url }}"><img src="{{ post.featured | absolute_url }}"></a>
     </div>
     {% endif %}

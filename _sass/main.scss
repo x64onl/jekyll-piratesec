@@ -213,10 +213,6 @@ code, pre {
 
 img, canvas {
   width: 100%;
-  image-rendering: auto;
-  image-rendering: crisp-edges;
-  image-rendering: pixelated;
-  filter: contrast(125%);
 }
 
 /* Classes */
@@ -254,8 +250,18 @@ img, canvas {
 // Post Elements
 
 .featured-image {
-  height: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 300px;
   overflow: hidden;
+}
+
+.pixelate {
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  filter: contrast(150%);
 }
 
 .sub-section {

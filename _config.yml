@@ -6,6 +6,9 @@ title: "PirateSec"
 subtitle: "A Seapunk Falvored Retro Terminal Jekyll Theme"
 description: "A Seapunk falvored Jekyll theme inspired by retro terminals."
 
+# theme settings
+featuredHeight: 300 # featured image height, default: 300px
+
 # pixelate.js - class="pixelate", pixelateAll overides all settings
 pixelateFeatured: true # pixelate all header images
 pixelateAll: false # pixelate all images

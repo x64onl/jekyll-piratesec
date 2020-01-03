@@ -10,9 +10,13 @@
     font-style: normal;
   }
 
+/* Screen Style */
+
 @media screen {
     @import "main";
 }
+
+/* Print Style */
 
 @media print {
     @import "print";
