@@ -22,10 +22,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="{{ '/assets/js/main.js' | absolute_url }}"></script>
     <script src="{{ '/assets/js/pixelate.js' | absolute_url }}"></script>
-    <script>
-      $(document).ready(function() {
-        $('.pixelate').pixelate();
-      });
-    </script>
+    {% include pixelate.html %}
   </body>
 </html>

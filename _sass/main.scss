@@ -276,7 +276,6 @@ info::before {
   color: var(--info-color);
   margin: 2.5rem 0 2.5rem 0;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .info::after {
@@ -291,7 +290,6 @@ info::before {
   color: var(--warn-color);
   margin: 2.5rem 0 2.5rem 0;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .warn::after {
@@ -306,7 +304,6 @@ info::before {
   color: var(--danger-color);
   margin: 2.5rem 0 2.5rem 0;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .danger::after {

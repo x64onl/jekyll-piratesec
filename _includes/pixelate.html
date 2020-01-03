@@ -1,0 +1,19 @@
+{% if site.pixelateAll %}
+<script>
+    $(document).ready(function() {
+        $('img').pixelate();
+    });
+</script>
+{% elsif site.pixelateFeatured %}
+<script>
+    $(document).ready(function() {
+        $('.pixelate, .featured-image img').pixelate();
+    });
+</script>
+{% else %}
+<script>
+    $(document).ready(function() {
+        $('.pixelate').pixelate();
+    });
+</script>
+{% endif %}
