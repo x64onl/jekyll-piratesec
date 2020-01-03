@@ -1,0 +1,29 @@
+<script>
+    $(document).ready(function() {
+        // pixelate.js
+        var bodyID = $('body').attr('id');
+        var pixelateElements;
+
+        switch (bodyID) {
+            case 'pixelateAll':
+            pixelateElements = "img"
+            break;
+            case 'pixelateFeatured':
+            pixelateElements = ".pixelate, .featured-image img";
+            break;
+            pixelateElements = ".pixelate"
+            default:
+        }
+
+        $(document).ready(function() {
+            $(pixelateElements).pixelate();
+        });
+
+        // open all external links in a new tab
+        $('a')
+            .filter('[href^="http"], [href^="https"], [href^="//"]')
+            .not('[href*="' + window.location.host + '"]')
+            .attr('rel', 'noopener noreferrer')
+            .attr('target', '_blank');
+    });
+</script>

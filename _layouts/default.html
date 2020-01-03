@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | absolute_url }}">
     <link href="{{ '/feed.xml' | absolute_url }}" type="application/rss+xml" rel="alternate" title="Latest 10 blog posts (atom)">
   </head>
-  <body>
+  <body id="{% if site.pixelateAll %}pixelateAll{% elsif site.pixelateFeatured %}pixelateFeatured{% endif %}">
     <header>
       {% include header.html %}
     </header>
@@ -22,6 +22,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="{{ '/assets/js/main.js' | absolute_url }}"></script>
     <script src="{{ '/assets/js/pixelate.js' | absolute_url }}"></script>
-    {% include pixelate.html %}
+    {% include js.html %}
   </body>
 </html>
