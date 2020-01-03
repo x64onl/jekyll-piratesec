@@ -253,7 +253,7 @@ img, canvas {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 300px;
+  max-height: 300px;
   overflow: hidden;
 }
 
