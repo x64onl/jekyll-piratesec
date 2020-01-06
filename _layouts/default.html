@@ -10,7 +10,7 @@
     <link href="{{ '/feed.xml' | absolute_url }}" type="application/rss+xml" rel="alternate" title="Latest 10 blog posts (atom)">
   </head>
   <body class="{% if site.pixelate-all %}pixelate-all{% elsif site.pixelate-featured %}pixelate-featured{% endif %}">
-    <div id="preloader"><div id="status"><img id="loader" src="/assets/images/loader.gif"></div></div>
+    <div id="preloader"><div id="status"><img id="loader" src="{{ 'assets/images/loader.gif' | absolute_url }}"></div></div>
     <div id="wrapper">
       <div id="content">
         <header>

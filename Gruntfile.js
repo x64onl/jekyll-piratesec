@@ -9,25 +9,18 @@ module.exports = function(grunt) {
                 banner: '/* <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
             build: {
+                expand: true,
+                flatten: true,
                 files: {
-                    'assets/js/main.min.js': 'js/main.js',
-                    'assets/js/pixelate.min.js': 'vendor/jquery-pixelate.js/js/pixelate.js'
+                    'assets/js/pixelate.min.js': 'vendor/jquery-pixelate.js/js/pixelate.js',
+                    'assets/js/main.min.js': 'js/main.js'
                 }
-            }
-        },
-
-        // watch
-        watch: {
-            scripts: {
-                files: 'assets/**/*.js',
-                tasks: ['uglify']
             }
         }
     });
 
     // plugins
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-watch');
 
     // default task
     grunt.registerTask('default', ['uglify']);
