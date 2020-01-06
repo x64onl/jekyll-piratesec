@@ -5,8 +5,8 @@ layout: default
 <section>
     <h1>{{ page.title }}</h1>
     {% if page.featured %}
-    <div class="featured-image"{% if site.featuredHeight %} style="max-height: {{ site.featuredHeight }}px"{% endif %}>
-        <img src="{{ page.featured | absolute_url }}">
+    <div class="featured"{% if site.featured-height %} style="max-height: {{ site.featured-height }}px"{% endif %}>
+        <img class="featured-image" src="{{ page.featured | absolute_url }}">
     </div>
     {% endif %}
     {{ content }}

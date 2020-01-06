@@ -1,3 +1,27 @@
-.ascii-logo {
+body {
+	background: none;
+	color: black;
+}
+
+.wrapper {
+	width: 100%;
+	margin: 0; padding: 0;
+	background: none;
+}
+
+header, footer {
     display: none;
+}
+
+.content a:after {
+	content: " [" attr(href) "] ";
+}
+
+.featured {
+    overflow: hidden;
+}
+
+img, .pixelate {
+    height: auto;
+    width: 100%;
 }

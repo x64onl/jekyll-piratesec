@@ -1,21 +1,20 @@
-<a href="{{ site.url | absolute_url }}"><div class="ascii-logo"><pre>
-@@@@@@@   @@@  @@@@@@@    @@@@@@   @@@@@@@  @@@@@@@@   @@@@@@   @@@@@@@@   @@@@@@@
-@@@@@@@@  @@@  @@@@@@@@  @@@@@@@@  @@@@@@@  @@@@@@@@  @@@@@@@   @@@@@@@@  @@@@@@@@
-@@!  @@@  @@!  @@!  @@@  @@!  @@@    @@!    @@!       !@@       @@!       !@@     
-!@!  @!@  !@!  !@!  @!@  !@!  @!@    !@!    !@!       !@!       !@!       !@!     
-@!@@!@!   !!@  @!@!!@!   @!@!@!@!    @!!    @!!!:!    !!@@!!    @!!!:!    !@!     
-!!@!!!    !!!  !!@!@!    !!!@!!!!    !!!    !!!!!:     !!@!!!   !!!!!:    !!!     
-!!:       !!:  !!: :!!   !!:  !!!    !!:    !!:            !:!  !!:       :!!     
-:!:       :!:  :!:  !:!  :!:  !:!    :!:    :!:           !:!   :!:       :!:     
- ::       ::   ::   :::  ::   :::     ::    :: ::::  :::: ::    :: ::::   ::: ::: 
- :        :     :   : :   :   : :     :     : :: ::   :: : :    : :: ::    :: :: :
 
-</pre></div></a>
-<h1 class="text-logo"><a href="{{ site.url | absolute_url }}">PirateSec</a></h1>
-<h2>{{ site.subtitle }}</h2>
-<nav>
-    <a href="{{ site.url | absolute_url }}">Home</a>
+
+<div class="title">
+    <div class="ascii">
+        <div class="logo-large">
+            <a href="{{ site.url | absolute_url }}"><pre>{% include ascii-large.html %}</pre></a>
+        </div>
+        <div class="logo-small">
+            <a href="{{ site.url | absolute_url }}"><pre>{% include ascii-small.html %}</pre></a>
+        </div>
+    </div>
+</div>
+<div class="subtitle">
+    <h3 class="subtitle-text">{{ site.subtitle }}</h3>
+</div>
+<nav class="navigation">
     {% for entry in site.data.navigation %}
-    | <a href="{{ entry.url | absolute_url }}">{{ entry.title }}</a>
+    <a class="item" href="{{ entry.url | absolute_url }}">{{ entry.title }}</a>
     {% endfor %}
 </nav>
