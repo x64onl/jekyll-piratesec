@@ -1,0 +1,3 @@
+[submodule "vendor/jquery-pixelate.js"]
+	path = vendor/jquery-pixelate.js
+	url = https://github.com/dpstrange/jquery-pixelate.js
