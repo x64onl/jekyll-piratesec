@@ -3,18 +3,18 @@
 // color scheme - Navy and Ivory by hal - https://terminal.sexy/#Ahsh6N_WAyw2wkVOfL-einpjLjNA_1h5RLWx8vG5Bl9z71hHotmxvrCQYXeN_5mhntnY9vbJ
 
 :root {
-  --background-color: rgb(0, 140, 160); // #008CA0
-  --foreground-color: rgb(0, 100, 125); // #00647D
-  --foreground-color-transparent: rgba(0, 100, 125, 0.50); // #00647D
-  --text-color: rgb(240, 240, 240); // #f0f0f0
-  --link-color: rgb(0, 225, 125); // #00E196
-  --link-color-transparent: rgba(0, 225, 125, 0.25); // #00E196
-  --success-color: rgb(0, 225, 175); // #00E196
-  --info-color: rgb(125, 225, 225); // #78d4e6
-  --warn-color: rgb(225, 225, 125); // #e3da87
-  --danger-color: rgb(225, 48, 109); // #d9306d
-  --red-shift: rgba(255, 0, 0, 0.75); // #ff0000
-  --blue-shift: rgba(0, 0, 255, 0.75); // #0000ff
+  --background-color: rgb(0, 125, 150);
+  --foreground-color: rgb(0, 100, 125);
+  --foreground-color-transparent: rgba(0, 100, 125, 0.50);
+  --text-color: rgb(240, 240, 240);
+  --link-color: rgb(150, 225, 50);
+  --link-color-transparent: rgba(150, 225, 50, 0.25);
+  --success-color: rgb(150, 225, 50);
+  --info-color: rgb(100, 225, 250);
+  --warn-color: rgb(225, 225, 125);
+  --danger-color: rgb(250, 50, 125);
+  --red-shift: rgba(255, 0, 0, 0.75);
+  --blue-shift: rgba(0, 0, 255, 0.75);
 }
 
 // reusable elements
@@ -201,7 +201,6 @@ h1, h2, h3, h4, h5, h6 {
 a, a:active, a:hover, a:visited {
   color: var(--link-color);
   text-decoration: none;
-  text-shadow: 0 0 1rem var(--link-color-transparent);
 }
 
 strong {
@@ -277,6 +276,7 @@ header {
     line-height: 0.75rem;
     margin: 2rem 0 2rem 0;
     font-size: 0.75rem;
+    text-shadow: 0 0 1rem var(--link-color-transparent);
 
     .logo-small {
       display: none;
@@ -331,25 +331,29 @@ main {
   .success {
     @include padding;
     text-transform: uppercase;
-    background: var(--success-color);
+    color: var(--success-color);
+    background: var(--foreground-color);
   }
 
   .info {
     @include padding;
     text-transform: uppercase;
-    background: var(--info-color);
+    color: var(--info-color);
+    background: var(--foreground-color);
   }
   
   .warn {
     @include padding;
     text-transform: uppercase;
-    background: var(--warn-color);
+    color: var(--warn-color);
+    background: var(--foreground-color);
   }
   
   .danger {
     @include padding;
     text-transform: uppercase;
-    background: var(--danger-color);
+    color: var(--danger-color);
+    background: var(--foreground-color);
   }
 }
 
