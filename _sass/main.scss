@@ -320,7 +320,7 @@ main {
     background: var(--foreground-color);
   }
 
-  .featured {
+  .featured, .featured a {
     max-height: 300px;
     display: flex;
     flex-direction: column;
