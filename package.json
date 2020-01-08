@@ -15,7 +15,8 @@
         "grunt-contrib-uglify": "~0.5.0"
     },
     "scripts": {
-        "update": "git submodule update --recursive --remote && git pull origin master",
+        "pull": "git submodule update --recursive --remote && git pull origin master",
+        "push": "git add . && git commit -a && git push",
         "serve": "grunt && jekyll serve -D"
     }
 }
