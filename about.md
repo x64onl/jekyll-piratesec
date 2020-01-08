@@ -18,6 +18,6 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
 # jQuery Pixelate.js
 
-<img class="pixelate" src="/assets/images/pages/about/dolphin.jpg">
+<img class="pixelate" src="{{ '/assets/images/pages/about/underwater.jpg' | absolute_url }}">
 
 [jQuery Pixelate.js](https://github.com/dpstrange/jquery-pixelate.js) is an extensible jQuery plugin for rendering pixelated images. [Click here](https://dpstrange.github.io/jquery-pixelate.js/) to see it in action!

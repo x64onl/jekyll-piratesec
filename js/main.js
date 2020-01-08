@@ -17,14 +17,6 @@ console.log(
     'IBM MDA: https://int10h.org/oldschool-pc-fonts/fontlist/#ibmmda'
 );
 
-/* Visual Elements */
-
-// detect screen size
-
-if ($(window).width() < 1200) {
-    $('body').addClass('mobile');
-}
-
 // open all external links in a new tab
 
 $('a')
@@ -32,6 +24,16 @@ $('a')
     .not('[href*="' + window.location.host + '"]')
     .attr('rel', 'noopener noreferrer')
     .attr('target', '_blank');
+
+// flowtype.js
+
+$('html').flowtype({
+    minimum: 600,
+    maximum: 1000,
+    minFont: 16,
+    maxFont: 22,
+    fontRatio: 40
+ });
 
 // pixelate.js
 

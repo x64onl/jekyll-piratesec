@@ -1,17 +1,19 @@
-
-
 <div class="title">
     <div class="ascii">
         <div class="logo-large">
-            <a href="{{ site.url | absolute_url }}"><pre>{% include ascii-large.html %}</pre></a>
+            <a href="{{ site.url | absolute_url }}">
+                {% highlight html %}{% include ascii-large.html %}{% endhighlight %}
+            </a>
         </div>
         <div class="logo-small">
-            <a href="{{ site.url | absolute_url }}"><pre>{% include ascii-small.html %}</pre></a>
+            <a href="{{ site.url | absolute_url }}">
+                {% highlight html %}{% include ascii-small.html %}{% endhighlight %}  
+            </a>
         </div>
     </div>
 </div>
 <div class="subtitle">
-    <h3 class="subtitle-text">{{ site.subtitle }}</h3>
+    <p class="subtitle-text">{{ site.subtitle }}</p>
 </div>
 <nav class="navigation">
     {% for entry in site.data.navigation %}

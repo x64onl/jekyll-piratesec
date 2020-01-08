@@ -13,6 +13,7 @@ module.exports = function(grunt) {
                 flatten: true,
                 files: {
                     'assets/js/pixelate.min.js': 'vendor/jquery-pixelate.js/js/pixelate.js',
+                    'assets/js/flowtype.min.js': 'vendor/FlowType.JS/flowtype.js',
                     'assets/js/main.min.js': 'js/main.js'
                 }
             }
