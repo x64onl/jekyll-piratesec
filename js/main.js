@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).on("load", function() {
     // Hello World
 
     console.log(
@@ -51,9 +51,8 @@ $(document).ready(function() {
         }
     }
 
-    $(window).on("load", function() {
-        $(selectedElements).pixelate({
-            focus: 0.70
-        });
+    
+    $(selectedElements).pixelate({
+        focus: 0.70
     });
 });

@@ -140,7 +140,6 @@ code.highlighter-rouge {
 html {
   height: 100%;
   @include monospace;
-  //@include md-font;
 }
 
 body {
@@ -188,7 +187,7 @@ body {
 }
 
 #content {
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto;
   @include padding;
 }
@@ -272,15 +271,12 @@ header {
   justify-content: center;
   align-items: center;
 
-  .ascii {
-    line-height: 0.75rem;
+  .ascii-logo {
     margin: 2rem 0 2rem 0;
-    font-size: 0.75rem;
+    font-size: 0.65rem;
+    line-height: 0.65rem;
     text-shadow: 0 0 1rem var(--link-color-transparent);
-
-    .logo-small {
-      display: none;
-    }
+    overflow: hidden;
   }
 }
 
@@ -316,12 +312,11 @@ main {
     background: var(--foreground-color);
   }
 
-  .featured, .featured a {
-    max-height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
+  .featured img, .featured canvas {
+    display: block;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
   }
 
   .success {
@@ -358,18 +353,4 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-/* Mobile */
-
-@media (max-width: 600px) {
-  .ascii {
-    .logo-large {
-      display: none !important;
-    }
-  
-    .logo-small {
-      display: block !important;
-    }
-  }
 }
