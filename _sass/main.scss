@@ -259,7 +259,7 @@ table {
   }
 }
 
-header {
+.header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -267,14 +267,17 @@ header {
 
   .ascii-logo {
     margin: 2rem 0 2rem 0;
-    font-size: 0.65rem;
-    line-height: 0.65rem;
+    font-size: 0.4rem;
+    line-height: 0.4rem;
     text-shadow: 0 0 1rem var(--link-color-transparent);
+  }
+  
+  .ascii-logo pre { 
     overflow: hidden;
   }
 }
 
-main {
+.main {
   margin: 3rem 0 3rem 0;
 
   section {
@@ -342,7 +345,7 @@ main {
   }
 }
 
-footer {
+.footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
