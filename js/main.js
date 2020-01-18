@@ -29,11 +29,11 @@ $(window).on("load", function() {
     // flowtype.js
 
     $('html').flowtype({
-        minimum: 0,
+        minimum: 200,
         maximum: 800,
-        minFont: 12,
+        minFont: 8,
         maxFont: 24,
-        fontRatio: 25
+        fontRatio: 40
     });
 
     // pixelate.js
