@@ -350,3 +350,13 @@ table {
   justify-content: center;
   align-items: center;
 }
+
+// mobile
+
+@media screen and (max-width: 800px) {
+  .ascii {
+    font-size: 0.45rem !important;
+    line-height: 0.45rem !important;
+    transition: all 0.5ms ease;
+  }
+}
