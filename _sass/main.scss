@@ -269,8 +269,8 @@ table {
   }
   
   .ascii {
-    font-size: 0.5rem;
-    line-height: 0.5rem;
+    font-size: 0.55rem;
+    line-height: 0.55rem;
     text-shadow: 0 0 1rem var(--link-color-transparent);
     overflow: hidden;
   }
@@ -349,4 +349,14 @@ table {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+// mobile
+
+@media screen and (max-width: 800px) {
+  .ascii {
+    font-size: 0.45rem !important;
+    line-height: 0.45rem !important;
+    transition: all 0.5s ease;
+  }
 }

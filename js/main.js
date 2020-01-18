@@ -29,10 +29,10 @@ $(window).on("load", function() {
     // flowtype.js
 
     $('html').flowtype({
-        minimum: 300,
+        minimum: 0,
         maximum: 800,
         minFont: 12,
-        maxFont: 20,
+        maxFont: 24,
         fontRatio: 25
     });
 
