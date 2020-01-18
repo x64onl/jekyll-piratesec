@@ -133,13 +133,12 @@ html {
   height: 100%;
   @include monospace;
   font-size: 20px;
+  line-height: 1.25rem;
 }
 
 body {
   margin: 0;
   height: 100%;
-  font-size: 1rem;
-  line-height: 1.25rem;
   color: var(--text-color);
   text-shadow:
     0.50px 0.50px 0.01rem var(--blue-shift),
@@ -267,12 +266,12 @@ table {
 
   .ascii-logo {
     margin: 2rem 0 2rem 0;
-    font-size: 0.4rem;
-    line-height: 0.4rem;
-    text-shadow: 0 0 1rem var(--link-color-transparent);
   }
   
-  .ascii-logo pre { 
+  .ascii {
+    font-size: 0.5rem;
+    line-height: 0.5rem;
+    text-shadow: 0 0 1rem var(--link-color-transparent);
     overflow: hidden;
   }
 }

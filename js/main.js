@@ -31,9 +31,9 @@ $(window).on("load", function() {
     $('html').flowtype({
         minimum: 300,
         maximum: 800,
-        minFont: 14,
+        minFont: 12,
         maxFont: 20,
-        fontRatio: 40
+        fontRatio: 25
     });
 
     // pixelate.js
@@ -51,8 +51,7 @@ $(window).on("load", function() {
         }
     }
 
-    
     $(selectedElements).pixelate({
-        focus: 0.70
+            focus: 0.70
     });
 });

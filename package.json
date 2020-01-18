@@ -17,6 +17,7 @@
     "scripts": {
         "pull": "git submodule update --recursive --remote && git pull origin master",
         "push": "git add . && git commit -a && git push",
+        "build": "grunt",
         "serve": "grunt && jekyll serve -D"
     }
 }
