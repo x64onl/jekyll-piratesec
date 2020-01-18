@@ -23,14 +23,6 @@
   font-family: 'IBM_MDA', Consolas, Lucida Console, monospace;
 }
 
-@mixin sm-font {
-  font-size: 16px;
-}
-
-@mixin md-font {
-  font-size: 22px;
-}
-
 @mixin sm-margin {
   margin: 1rem 0 1rem 0;
 }
@@ -140,11 +132,13 @@ code.highlighter-rouge {
 html {
   height: 100%;
   @include monospace;
+  font-size: 20px;
 }
 
 body {
   margin: 0;
   height: 100%;
+  font-size: 1rem;
   line-height: 1.25rem;
   color: var(--text-color);
   text-shadow:

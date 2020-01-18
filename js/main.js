@@ -31,8 +31,8 @@ $(window).on("load", function() {
     $('html').flowtype({
         minimum: 600,
         maximum: 1000,
-        minFont: 16,
-        maxFont: 22,
+        minFont: 14,
+        maxFont: 20,
         fontRatio: 40
     });
 
