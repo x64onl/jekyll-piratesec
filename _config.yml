@@ -9,7 +9,7 @@ description: 'A Seapunk flavored Jekyll theme inspired by retro terminals.'
 
 # build
 highlighter: rouge
-exclude: ['js', 'node_modules', 'vendor', 'Gruntfile.js', 'package.json', 'package-lock.json', 'LICENSE', 'README.md']
+exclude: ['LICENSE', 'README.md']
 
 # theme
 featured-height: 200 # featured image height; options: intiger, default: false (300px)

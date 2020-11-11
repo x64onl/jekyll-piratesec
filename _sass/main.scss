@@ -41,7 +41,7 @@ figure, code, pre {
   @include monospace;
   margin: 0;
   padding: 0;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 code.highlighter-rouge {
